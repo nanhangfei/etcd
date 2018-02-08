@@ -1,0 +1,7 @@
+VERSION=v3.0.17
+PROJECT_ID=coreos
+PROJECT=coreos.com/${PROJECT_ID}
+
+docker build -t ${PROJECT}/etcd:${VERSION} .
+
+docker push ${PROJECT}/etcd:${VERSION}
